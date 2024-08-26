@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-api-token
+  profiles:
+    active:
+      - default
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5433}/${POSTGRES_DB:db}
+    username: ${POSTGRES_USERNAME:user}
+    password: ${POSTGRES_PASSWORD:password}
+    # driver-class-name: org.postgresql.Driver
